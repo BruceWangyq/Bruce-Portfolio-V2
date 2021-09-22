@@ -7,7 +7,7 @@ import Skills from "components/Skills";
 import Projects from "components/Projects";
 import ProjectsTitle from "components/Projects/ProjectsTitle";
 import Footer from "components/Footer";
-import AllProjectsButton from "components/Projects/AllProjectsButton";
+// import AllProjectsButton from "components/Projects/AllProjectsButton";
 
 import allProjects, { ProjectType } from "lib/projects";
 

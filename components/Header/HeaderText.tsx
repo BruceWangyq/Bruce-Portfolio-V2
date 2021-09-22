@@ -1,4 +1,4 @@
-import { Box, colors, Typography } from "@material-ui/core";
+import { Box, Typography } from "@material-ui/core";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import Buttons from "./Buttons";
 
@@ -17,7 +17,6 @@ const useStyles = makeStyles((theme: Theme) =>
       paddingRight: "20%",
     },
     hi: {
-      color: "#0090909",
       fontSize: "170%",
       fontWeight:"bolder",
     },

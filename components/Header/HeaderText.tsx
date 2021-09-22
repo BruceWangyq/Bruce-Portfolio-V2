@@ -56,7 +56,7 @@ function HeaderText() {
         gutterBottom
       >
         <span className={classes.hi}>Hi, </span>I'm{" "}
-        <span itemProp="givenName" className={classes.givenName}>Bruce Wang</span>
+        <span itemProp="givenName" className={classes.givenName}>Bruce</span>
       </Typography>
       <Typography
         variant="h4"

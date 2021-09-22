@@ -9,7 +9,7 @@ import Link from "next/link";
 import { AppProps } from "next/app";
 import { ThemeProvider } from "@material-ui/core/styles";
 import {  red, deepOrange } from "@material-ui/core/colors";
-import { createTheme } from "@material-ui/core/styles";
+import { createMuiTheme } from "@material-ui/core/styles";
 import {
   AppBar,
   Toolbar,
@@ -84,7 +84,7 @@ function ScrollTop(props: Props) {
 function MyAppWithTheme(props: AppProps) {
   const darkMode = useDarkMode();
   const paletteType = darkMode ? "dark" : "light";
-  const theme = createTheme({
+  const theme = createMuiTheme({
     palette: {
       // primary: deepPurple,
       secondary: paletteType === "dark" ? deepOrange : red,

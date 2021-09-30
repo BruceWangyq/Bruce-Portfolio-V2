@@ -15,13 +15,14 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     title: {
       paddingRight: "20%",
+
     },
     hi: {
       fontSize: "170%",
       fontWeight:"bolder",
     },
     paragraph: {
-      paddingRight: "30%",
+      paddingRight: "10%",
       fontFamily: "Arial",
       fontWeight: "normal"
     },
@@ -31,7 +32,7 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     givenName: {
       fontWeight: "bold",
-      fontSize: "220%",
+      fontSize: "180%",
     }
   })
 );
@@ -61,7 +62,7 @@ function HeaderText() {
       <Typography
         variant="h4"
         itemProp="disambiguatingDescription"
-        component="h2"
+        component="h1"
         gutterBottom
       >
         A Frontend Developer

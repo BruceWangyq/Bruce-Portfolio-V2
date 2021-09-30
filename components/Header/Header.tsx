@@ -58,7 +58,7 @@ function Header() {
       <Toolbar />
       <Container className={classes.container}>
         <Grid container>
-          <Grid item md={6} xs={10} className={classes.gridItem}>
+          <Grid item md={6} xs={12} className={classes.gridItem}>
             <HeaderText />
           </Grid>
           <Hidden smDown>

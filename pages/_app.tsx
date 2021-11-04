@@ -85,6 +85,20 @@ function MyAppWithTheme(props: AppProps) {
   const darkMode = useDarkMode();
   const paletteType = darkMode ? "dark" : "light";
   const theme = createMuiTheme({
+    typography: {
+      fontFamily: [
+        '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+      ].join(','),
+    },
     palette: {
       // primary: deepPurple,
       secondary: paletteType === "dark" ? deepOrange : red,

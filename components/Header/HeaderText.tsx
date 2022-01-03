@@ -65,11 +65,11 @@ function HeaderText() {
         component="h1"
         gutterBottom
       >
-        A Frontend Developer
+        A Frontend Blockchain Developer
       </Typography>
+      <br />
       <Typography itemProp="knowsAbout" className={classes.paragraph}>
-        I specialize in developing and deploying responsive websites and web
-        applications.<br />
+        I specialize in developing and deploying responsive web applications cominbine with latest blockchain technologies.<br /><br />
         I enjoy solving complex problems, and providing sustainable, scalable solutions.
       </Typography>
       <Buttons />

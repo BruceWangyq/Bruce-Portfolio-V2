@@ -70,7 +70,7 @@ function HeaderText() {
       <br />
       <Typography itemProp="knowsAbout" className={classes.paragraph}>
         I specialize in developing and deploying responsive web applications cominbine with latest blockchain technologies.<br /><br />
-        I enjoy solving complex problems, and providing sustainable, scalable solutions.
+        I enjoy solving complex problems, exploring new technology and providing sustainable, scalable solutions.
       </Typography>
       <Buttons />
     </Box>

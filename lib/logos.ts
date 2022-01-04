@@ -22,7 +22,9 @@ type logoNames =
   | "reactSpring"
   | "firebase"
   | "tailwindcss"
-  | "framerMotion";
+  | "framerMotion"
+  | "solidity"
+  | "ethers";
 
 type Logos = {
   [k in logoNames]: {
@@ -134,6 +136,14 @@ const logos: Logos = {
   framerMotion: {
     label: "Framer Motion",
     logo: "/assets/icons/framer.png",
+  },
+  solidity: {
+    label: "Solidity",
+    logo: "/assets/icons/solidity.svg",
+  },
+  ethers: {
+    label: "Ethers.js",
+    logo: "/assets/icons/ethers.svg",
   },
 };
 

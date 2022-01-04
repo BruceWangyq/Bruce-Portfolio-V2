@@ -63,6 +63,8 @@ function Skills() {
       logos.firebase,
       logos.socketio,
       logos.vercel,
+      logos.solidity,
+      logos.ethers,
     ],
     []
   );

@@ -8,6 +8,7 @@ import BackHomeButton from "components/Projects/BackHomeButton";
 import allProjects, { ProjectType } from "lib/projects";
 
 const projects: ProjectType[] = [
+  allProjects.MatrixDAO,
   allProjects.disneyClone,
   allProjects.tripAdvisor,
   allProjects.ecommerceDashboard,

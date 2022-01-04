@@ -4,7 +4,8 @@ type ProjectName =
   | "thisWebsite"
   | "tripAdvisor"
   | "ecommerceDashboard"
-  | "disneyClone";
+  | "disneyClone"
+  | "MatrixDAO";
 
 export type StackType = { label: string; logo: string; invert?: boolean };
 
@@ -57,6 +58,29 @@ const projects: Projects = {
         width: 859,
         height: 509,
       },
+    },
+  },
+
+  MatrixDAO: {
+    title: "MatrixDAO",
+    description: [
+      "MatrixDAO is a Decentralized Autonomous Organization which built for Matrix movie lovers which deployed on Ethereum Rinkeby Test Network.",
+      "People can log in with their metamask wallet and mint their membership NFT for MatrixDAO, and people can receive MatrixDAO governance token **MTX** from airdroping. People can vote their proposal to utilize their treasury.",
+      "Built  MatrixDAO with **thirdweb.js** and **ethers.js** and smart contracts.",
+      "The frontend is built using **React JS** and styled using **Tailwindcss** .",
+      "If you wish to test this project, please feel free to login in with your metamask on Rinkeby, no gas fee will be needed.",
+    ],
+    stack: [logos.nextjs, logos.tailwindcss, logos.firebase, logos.redux],
+    links: {
+      github: "https://github.com/BruceWangyq/MatrixDao",
+      live: "https://buildspace-dao-starter.brucewang9.repl.co/",
+    },
+    images: {
+      poster: "/project/matrixdao/matrixdao.jpg",
+      mp4: "/project/matrixdao/disneyclonemp4.mp4",
+      webm: "/project/matrixdao/matrixdaowebm.webm",
+      vidHeight: 958,
+      vidWidth: 1916,
     },
   },
 

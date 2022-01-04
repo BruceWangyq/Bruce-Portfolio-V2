@@ -70,7 +70,7 @@ const projects: Projects = {
       "The frontend is built using **React JS** and styled using **Tailwindcss** .",
       "If you wish to test this project, please feel free to login in with your metamask on Rinkeby, no gas fee will be needed.",
     ],
-    stack: [logos.nextjs, logos.tailwindcss, logos.firebase, logos.redux],
+    stack: [logos.react, logos.ethers, logos.solidity],
     links: {
       github: "https://github.com/BruceWangyq/MatrixDao",
       live: "https://buildspace-dao-starter.brucewang9.repl.co/",

@@ -8,7 +8,7 @@ import PropTypes from "prop-types";
 // import Link from "next/link";
 import { AppProps } from "next/app";
 import { ThemeProvider } from "@material-ui/core/styles";
-import {  red, deepOrange } from "@material-ui/core/colors";
+import { red, deepOrange } from "@material-ui/core/colors";
 import { createMuiTheme } from "@material-ui/core/styles";
 import {
   AppBar,
@@ -86,18 +86,7 @@ function MyAppWithTheme(props: AppProps) {
   const paletteType = darkMode ? "dark" : "light";
   const theme = createMuiTheme({
     typography: {
-      fontFamily: [
-        '-apple-system',
-      'BlinkMacSystemFont',
-      '"Segoe UI"',
-      'Roboto',
-      '"Helvetica Neue"',
-      'Arial',
-      'sans-serif',
-      '"Apple Color Emoji"',
-      '"Segoe UI Emoji"',
-      '"Segoe UI Symbol"',
-      ].join(','),
+      fontFamily: ["Outfit"].join(","),
     },
     palette: {
       // primary: deepPurple,

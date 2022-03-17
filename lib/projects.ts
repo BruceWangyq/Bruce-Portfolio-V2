@@ -5,6 +5,7 @@ type ProjectName =
   | "tripAdvisor"
   | "ecommerceDashboard"
   | "disneyClone"
+  | "CyberGraph"
   | "MatrixDAO";
 
 export type StackType = { label: string; logo: string; invert?: boolean };
@@ -58,6 +59,29 @@ const projects: Projects = {
         width: 859,
         height: 509,
       },
+    },
+  },
+
+  CyberGraph: {
+    title: "CyberGraph",
+    description: [
+      "CyberGraph is a 3D-graph based, user based social connection explorer.",
+      "People can log in with their metamask wallet and check out their cyberconnect social connections in Metaverse.",
+      "It has some cool features like 3d node graph, dynamic loading bar, immersive user experience, cyber mode(10-hops friendship network display) and focus mode(aggregated connection display).",
+      "Built with **Next.js** and **Typescript** and **GraphQL**.",
+      "Please feel free to login in with your metamask wallet and tryout.",
+    ],
+    stack: [logos.nextjs, logos.typescript, logos.graphql],
+    links: {
+      github: "https://github.com/cyberconnecthq/CyberGraph",
+      live: "https://cyber-graph.vercel.app/",
+    },
+    images: {
+      poster: "/project/cybergraph/cybergraph-screenshot-2.png",
+      mp4: "",
+      webm: "/project/cybergraph/cybergraph.webm",
+      vidHeight: 958,
+      vidWidth: 1916,
     },
   },
 

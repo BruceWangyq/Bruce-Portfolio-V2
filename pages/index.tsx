@@ -12,8 +12,8 @@ import Footer from "components/Footer";
 import allProjects, { ProjectType } from "lib/projects";
 
 const projects: ProjectType[] = [
+  allProjects.CyberGraph,
   allProjects.MatrixDAO,
-  allProjects.disneyClone,
   allProjects.tripAdvisor,
   // allProjects.getItDone,
 ];

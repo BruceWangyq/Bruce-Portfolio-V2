@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
         <Head>
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
           />
           {/* Global Site Tag (gtag.js) - Google Analytics */}
           <script
@@ -68,8 +68,6 @@ MyDocument.getInitialProps = async (ctx) => {
   // Render app and page and get the context of the page with collected side effects.
   const sheets = new ServerStyleSheets();
   const originalRenderPage = ctx.renderPage;
-
-
 
   ctx.renderPage = () =>
     originalRenderPage({

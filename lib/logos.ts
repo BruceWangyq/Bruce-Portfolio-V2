@@ -14,6 +14,7 @@ type logoNames =
   | "vercel"
   | "ejs"
   | "nodejs"
+  | "graphql"
   | "javascript"
   | "postgresql"
   | "redux"
@@ -108,6 +109,10 @@ const logos: Logos = {
   nodejs: {
     label: "Node.js",
     logo: "/assets/icons/nodejs.svg",
+  },
+  graphql: {
+    label: "GraphQL",
+    logo: "/assets/icons/graphql.svg",
   },
   javascript: {
     label: "JavaScript",

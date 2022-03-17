@@ -15,16 +15,14 @@ const useStyles = makeStyles((theme: Theme) =>
     },
     title: {
       paddingRight: "20%",
-
     },
     hi: {
       fontSize: "170%",
-      fontWeight:"bolder",
+      fontWeight: "bolder",
     },
     paragraph: {
       paddingRight: "10%",
-      fontFamily: "Arial",
-      fontWeight: "normal"
+      fontWeight: "normal",
     },
     h4: {
       color: "purple",
@@ -33,7 +31,7 @@ const useStyles = makeStyles((theme: Theme) =>
     givenName: {
       fontWeight: "bold",
       fontSize: "180%",
-    }
+    },
   })
 );
 
@@ -57,7 +55,9 @@ function HeaderText() {
         gutterBottom
       >
         <span className={classes.hi}>Hi, </span>I'm{" "}
-        <span itemProp="givenName" className={classes.givenName}>Bruce Wang</span>
+        <span itemProp="givenName" className={classes.givenName}>
+          Bruce Wang
+        </span>
       </Typography>
       <Typography
         variant="h4"
@@ -69,8 +69,11 @@ function HeaderText() {
       </Typography>
       <br />
       <Typography itemProp="knowsAbout" className={classes.paragraph}>
-        I specialize in developing and deploying responsive web applications cominbine with latest blockchain technologies.<br /><br />
-        I enjoy solving complex problems, exploring new technology and providing sustainable, scalable solutions.
+        I specialize in developing and deploying responsive web applications
+        cominbine with latest blockchain technologies.
+        <br />
+        <br />I enjoy solving complex problems, exploring new technology and
+        providing sustainable, scalable solutions.
       </Typography>
       <Buttons />
     </Box>

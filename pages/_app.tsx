@@ -41,9 +41,33 @@ import ChevronRightIcon from "@material-ui/icons/ChevronRight";
 
 import { DarkModeProvider, useDarkMode } from "../context/themeContext";
 import DarkModeIcon from "../components/Header/DarkModeIcon";
+
+import "@rainbow-me/rainbowkit/styles.css";
+import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
+import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
+import { alchemyProvider } from "wagmi/providers/alchemy";
+import { publicProvider } from "wagmi/providers/public";
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+
 interface Props {
   children: React.ReactElement;
 }
+
+const { chains, provider } = configureChains(
+  [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
+  [alchemyProvider({ alchemyId: process.env.ALCHEMY_ID }), publicProvider()],
+);
+
+const { connectors } = getDefaultWallets({
+  appName: "My RainbowKit App",
+  chains,
+});
+
+const wagmiClient = createClient({
+  autoConnect: true,
+  connectors,
+  provider,
+});
 
 function ScrollTop(props: Props) {
   const useStyles = makeStyles((theme: Theme) =>
@@ -53,7 +77,7 @@ function ScrollTop(props: Props) {
         bottom: theme.spacing(2),
         right: theme.spacing(2),
       },
-    })
+    }),
   );
   const { children } = props;
   const classes = useStyles();
@@ -114,7 +138,11 @@ function MyAppWithTheme(props: AppProps) {
   });
   return (
     <ThemeProvider theme={theme}>
-      <MyApp {...props} />
+      <WagmiConfig client={wagmiClient}>
+        <RainbowKitProvider chains={chains}>
+          <MyApp {...props} />
+        </RainbowKitProvider>
+      </WagmiConfig>
     </ThemeProvider>
   );
 }
@@ -197,7 +225,7 @@ export function MyApp({ Component, pageProps }: AppProps) {
         marginTop: theme.spacing(1),
         marginBottom: theme.spacing(1),
       },
-    })
+    }),
   );
   const classes = useStyles();
 
@@ -405,6 +433,7 @@ export function MyApp({ Component, pageProps }: AppProps) {
               </Box>
             </Hidden>
             <DarkModeIcon />
+            <ConnectButton />
             <Hidden lgUp>
               <IconButton
                 color="inherit"

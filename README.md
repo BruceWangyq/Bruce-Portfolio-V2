@@ -1,9 +1,8 @@
 <h1 align="center"><a href="https://brucewangdev.com">brucewangdev.com</a> - Bruce Wang's Portfolio</h1>
 
-![Lines of code](https://img.shields.io/tokei/lines/github/BhavyaCodes/portfolio?style=flat-square) ![GitHub last commit](https://img.shields.io/github/last-commit/BhavyaCodes/portfolio?style=flat-square&logo=github)  ![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/github/BhavyaCodes/portfolio?logo=LGTM&style=flat-square) ![GitHub top language](https://img.shields.io/github/languages/top/BhavyaCodes/portfolio?logo=typescript&logoColor=white&style=flat-square) ![Vercel](https://therealsujitk-vercel-badge.vercel.app/?style=flat-square&app=portfolio-git-main-juggernaut9)
+![Lines of code](https://img.shields.io/tokei/lines/github/BhavyaCodes/portfolio?style=flat-square) ![GitHub last commit](https://img.shields.io/github/last-commit/BhavyaCodes/portfolio?style=flat-square&logo=github) ![LGTM Grade](https://img.shields.io/lgtm/grade/javascript/github/BhavyaCodes/portfolio?logo=LGTM&style=flat-square) ![GitHub top language](https://img.shields.io/github/languages/top/BhavyaCodes/portfolio?logo=typescript&logoColor=white&style=flat-square) ![Vercel](https://therealsujitk-vercel-badge.vercel.app/?style=flat-square&app=portfolio-git-main-juggernaut9)
 
 ---
-
 
 ## Highlights
 
@@ -14,7 +13,6 @@
 - **SEO** Appears as 1st or 2nd result when searching Bruce Wang on duckduckgo and bing, 1st or 2nd page on google.
 - **Responsive** for all screen sizes
 - Animations added using **react-spring** and **framer-motion**
-
 
 ---
 
@@ -37,7 +35,10 @@
   </tr>
 </table>
 
-
+```bash
+npm i
+npm run dev
+```
 
 <!-- # TypeScript Next.js example
 

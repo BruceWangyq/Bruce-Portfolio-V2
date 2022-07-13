@@ -65,7 +65,7 @@ function HeaderText() {
         component="h1"
         gutterBottom
       >
-        A Frontend Blockchain Developer
+        A Frontend Web3/Blockchain Developer
       </Typography>
       <br />
       <Typography itemProp="knowsAbout" className={classes.paragraph}>

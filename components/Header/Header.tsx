@@ -1,12 +1,6 @@
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import { scroller } from "react-scroll";
-import {
-  Toolbar,
-  Grid,
-  Container,
-  IconButton,
-  Hidden,
-} from "@material-ui/core";
+import { Toolbar, Grid, Container, IconButton, Hidden } from "@mui/material";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 import { useDarkMode } from "context/themeContext";

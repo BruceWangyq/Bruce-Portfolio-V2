@@ -13,15 +13,15 @@ import {
   Link,
   TextField,
   Button,
-  Hidden,
   useTheme,
   Snackbar,
   IconButton,
 } from "@material-ui/core";
+import { Hidden } from "@mui/material";
 import MailIcon from "@material-ui/icons/Mail";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import DescriptionIcon from '@material-ui/icons/Description';
+import DescriptionIcon from "@material-ui/icons/Description";
 import SendIcon from "@material-ui/icons/Send";
 import CloseIcon from "@material-ui/icons/Close";
 import PhoneIcon from "@material-ui/icons/Phone";
@@ -194,7 +194,10 @@ function Footer() {
                     rel="noopener noreferrer"
                     color="inherit"
                   >
-                    <DescriptionIcon className={classes.icon} fontSize="large" />
+                    <DescriptionIcon
+                      className={classes.icon}
+                      fontSize="large"
+                    />
 
                     <Typography>Resume</Typography>
                   </Link>
@@ -240,7 +243,7 @@ function Footer() {
             </article>
           </Grid>
           <Grid item md={6} sm={12}>
-            <Typography variant="h3" align="left"> 
+            <Typography variant="h3" align="left">
               Say Hi
             </Typography>
             <form onSubmit={handleFormSubmit}>

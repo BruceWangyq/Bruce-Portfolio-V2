@@ -25,10 +25,10 @@ import {
   ListItemIcon,
   ListItemText,
   Divider,
-  Hidden,
   Box,
   Button,
 } from "@material-ui/core";
+import { Hidden } from "@mui/material";
 import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";

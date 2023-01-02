@@ -127,8 +127,7 @@ function Project({
         {description.map((para, index) => (
           <Typography key={index} className={classes.text} gutterBottom>
             <ReactMarkdown
-              renderers={{
-                paragraph: "span",
+              components={{
                 link: ({ href, children }) => (
                   <a href={href} target="_blank" rel="noopener noreferrer">
                     {children}

@@ -96,7 +96,7 @@ function HeaderText() {
       <br />
       <Typography itemProp="knowsAbout" className={classes.paragraph}>
         I specialize in developing and deploying responsive web
-        applications/dApps cominbine with latest blockchain technologies.
+        applications/dApps cominbine with excellent UI/UX experience.
         <br />
         <br />I enjoy solving complex problems, exploring new technology and
         providing sustainable, scalable solutions.
